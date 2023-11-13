@@ -7,7 +7,7 @@ import { GlobalProvider } from './context/GlobalState'
 function App() {
   return (
     <GlobalProvider>
-      <Header></Header>
+      <Header />
       <Balance></Balance>
       <TransactionForm></TransactionForm>
     </GlobalProvider>
