@@ -21,12 +21,20 @@ export const GlobalProvider = ({ children }) => {
         })
     }
 
+    const deleteTransaction = (id) => {
+        dispatch({
+            type: 'DELETE_TRANSACTION',
+            payload: id
+        })
+    }
+
     const [state, dispatch] = useReducer(AppReducer, initialState)
     return (
         <Context.Provider
             value={{ 
                 transactions: state.transactions,
-                addTransaction
+                addTransaction,
+                deleteTransaction
             }}
         >
             {children}
