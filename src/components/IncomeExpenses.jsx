@@ -10,17 +10,19 @@ function IncomeExpenses() {
                     .filter(amount => amount > 0)
                     .reduce((acc, item) => (acc += item), 0)
     
-    console.log('Ingresos', income)
+    const expense = amounts
+                    .filter(amount => amount < 0)
+                    .reduce((acc, item) => (acc += item), 0) * -1
 
   return (
     <>
         <div>
             <h4>Income</h4>
-            <p>{2000}</p>
+            <p>{income}</p>
         </div>
         <div>
             <h4>Expense</h4>
-            <p>{1500}</p>
+            <p>{expense}</p>
         </div>
     </>
   )
