@@ -9,10 +9,15 @@ export const TransactionItem = ({ transaction }) => {
             <p className="text-sm">{transaction.description}</p>
             <div>
                 <span>{transaction.amount}</span>
-                <button onClick={(e) => {
-                    deleteTransaction(transaction.id)
-                    console.log(e)
-                }}>X</button>
+                <button
+                    onClick={(e) => {
+                        deleteTransaction(transaction.id)
+                        console.log(e)
+                    }}
+                    className="font-bold text-white rounded-lg ml-2 bg-indigo-700 px-3 py-1"
+                >
+                    X
+                </button>
             </div>
         </li>
     )

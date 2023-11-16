@@ -2,7 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className="text-4xl font-bold text-center my-5">
+      Expense Tracker
+    </div>
   )
 }
 
