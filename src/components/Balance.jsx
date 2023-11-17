@@ -11,7 +11,7 @@ function Balance() {
   return (
     <div className="flex justify-between">
       <h3>Your Balance:</h3>
-      <h1 className="text-2xl font-bold">$ {total}</h1>
+      <h1 className="text-2xl font-bold py-2">$ {total}</h1>
     </div>
   )
 }
